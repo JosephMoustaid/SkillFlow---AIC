@@ -145,17 +145,8 @@ We welcome contributions from the community! If you'd like to contribute to Skil
 3. Make your changes and commit them.
 4. Submit a pull request with a detailed description of your changes.
 
-## License
 
-SkillFlow is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Contact
-
-If you have any questions or feedback, feel free to reach out:
-
-- **Email**: your-email@example.com
-- **Twitter**: [@yourhandle](https://twitter.com/yourhandle)
-- **GitHub**: [your-username](https://github.com/your-username)
 
 ---
 
