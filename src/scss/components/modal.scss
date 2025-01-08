@@ -1,0 +1,51 @@
+.custom-modal .modal-content {
+    background-color: var(--content-bg-color);
+    color: var(--text-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+  
+  .custom-modal .modal-header,
+  .custom-modal .modal-footer {
+    border: none;
+    background-color: var(--header-bg-color);
+  }
+  
+  .custom-modal .modal-header .close {
+    color: var(--text-color);
+  }
+  
+  .custom-modal .modal-title {
+    color: var(--text-color);
+  }
+  
+  .custom-modal .modal-body {
+    background-color: var(--content-bg-color);
+  }
+  
+  .custom-modal .btn-primary {
+    background-color: var(--button-bg-color);
+    border-color: var(--button-bg-color);
+    color: var(--button-text-color);
+  
+    &:hover {
+      background-color: var(--button-hover-bg-color);
+      border-color: var(--button-hover-bg-color);
+    }
+  }
+  
+  .custom-modal .btn-secondary {
+    background-color: var(--button-secondary-bg-color);
+    border-color: var(--button-secondary-bg-color);
+    color: var(--button-secondary-text-color);
+  
+    &:hover {
+      background-color: var(--button-secondary-hover-bg-color);
+      border-color: var(--button-secondary-hover-bg-color);
+    }
+  }
+
+  .custom-modal .form-control:focus {
+    box-shadow: none;
+    border-color: inherit;
+  }

@@ -1,0 +1,103 @@
+.chat-conversation {
+
+    max-width: 700px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 1rem;
+    overflow-y: auto;
+    height: calc(100vh - 150px); /* Adjust based on your layout */
+    background-color: var(--content-bg-color);
+    color: var(--text-color, #000);
+    font-family: 'SFProDisplay', sans-serif;
+  
+    button{
+      border: none;
+      background-color: inherit;
+      box-shadow: none;
+      &:active , &:focus{
+        outline: none;
+        box-shadow: none;
+      }
+      color: var(--text-color, #000);
+      i{
+        color: var(--text-color, #000);
+      }
+    }
+    .chat-message {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      &.user {
+        align-items: flex-end;
+      }
+  
+      &.bot {
+        align-items: flex-start;
+      }
+  
+      .chat-message-content {
+        display: inline-block;
+        padding: 0.75rem 1rem;
+        border-radius: 15px;
+        background-color: var(--message-bg-color, #e0e0e0) !important;
+        color: var(--text-color, #000);
+        max-width: 70%;
+        word-wrap: break-word;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .chat-message-time{
+        font-size: .7em;
+      }
+    }
+    ul {
+      button{
+        width: 100%;
+        border-bottom: 1px solid var(--message-bg-color);
+        box-shadow: none;
+        background-color: inherit;
+        &:active , &:focus , &:hover {
+          box-shadow: none;
+          border: none;
+          background-color: var(--icon-bg-color);
+        }
+      }
+    }
+  }
+
+
+  .chat-message-content.typing {
+    display: flex;
+    align-items: center;
+  
+    .dot {
+      height: 8px;
+      width: 8px;
+      margin: 0 2px;
+      background-color: var(--text-color, #000);
+      border-radius: 50%;
+      display: inline-block;
+      animation: typing 1s infinite;
+    }
+  
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+  
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+  }
+  
+  @keyframes typing {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

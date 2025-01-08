@@ -1,0 +1,65 @@
+.chat-input {
+    max-width: 700px;
+    margin: 0 auto; /* Center horizontally */
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--input-bg-color);
+    z-index: 2;
+  
+    .prompt-mic, .prompt-send {
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      color: var(--text-color);
+      background-color: var(--icon-bg-color);
+      padding: 0.75rem;
+      width: 3rem; /* Ensure equal width and height */
+      height: 3rem; /* Ensure equal width and height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s, transform 0.3s;
+  
+      &:hover {
+        background-color: var(--icon-bg-hover-color);
+        transform: scale(1.1);
+      }
+  
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  
+    .prompt-input {
+      flex: 1;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 25px;
+      margin: 0 0.5rem;
+      font-size: 1rem;
+      background-color: var(--input-bg-color);
+      color: var(--text-color);
+      transition: border-color 0.3s;
+  
+      &:focus {
+        border-color: var(--icon-bg-hover-color);
+        outline: none;
+      }
+    }
+  
+    .listening-indicator {
+      margin-left: 1rem;
+      color: var(--text-color);
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }

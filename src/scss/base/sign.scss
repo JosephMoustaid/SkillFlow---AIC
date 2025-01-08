@@ -1,0 +1,148 @@
+
+.sign-up-container {
+    display: flex;
+
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+
+    .left-section{
+        @media (max-width: 768px) {
+            display: none !important;
+          }
+    }
+  
+    input {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 25px;
+      margin: 0 0.5rem;
+      font-size: 1rem;
+      background-color: var(--input-bg-color);
+      transition: border-color 0.3s;
+  
+      & , &::placeholder{
+        color: var(--text-color);
+      }
+      &:focus {
+        border-color: var(--icon-bg-hover-color);
+        outline: none;
+      }
+    }
+
+    .check-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: green;
+      }
+
+  }
+  
+  .sign-up-box {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 1.5rem;
+      color: var(--text-color);
+    }
+  
+    .form-group {
+      margin-bottom: 1rem;
+      text-align: left;
+  
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+      }
+  
+      .form-control {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        background-color: var(--input-bg-color);
+        color: var(--text-color);
+        transition: border-color 0.3s;
+  
+        &:focus {
+          border-color: var(--primary-color);
+          outline: none;
+          box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+  
+      &.btn-primary {
+        background-color: var(--button-background-color);
+        color: var(--button-color);
+        border: 1px solid white;
+        &:hover {
+          background-color: var(--icon-hover-color);
+          color: var(--header-bg-color);
+        }
+      }
+  
+      &.btn-google {
+        background-color: #db4437;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        .google-icon {
+          margin-right: 0.5rem;
+        }
+  
+        &:hover {
+          background-color: #c23321;
+        }
+      }
+    }
+  
+    .divider {
+      margin: 1.5rem 0;
+      color: var(--text-color);
+      position: relative;
+      text-align: center;
+  
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 45%;
+        height: 1px;
+        background-color: var(--border-color);
+      }
+  
+      &::before {
+        left: 0;
+      }
+  
+      &::after {
+        right: 0;
+      }
+    }
+
+
+  }
+
+
+
